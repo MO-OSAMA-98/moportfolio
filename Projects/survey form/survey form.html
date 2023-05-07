@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Mohammed Osama survey form</h1>
+    <p id="description">
+        thanks for help me improve my work
+    </p>
+    <form id="survey-form" action="">
+        <fieldset>
+            <label for="name" id="name-label">Name<input id="name" type="text" placeholder="Enter Your Name" required> </label>
+            <label for="email" id="email-label">Email<input id="email" type="email" placeholder="Enter Your Email" required> </label>
+            <label for="number" id="number-label">Age<input id="number" type="number" min="15" max="200" placeholder="Age" ></label>
+            <label>What courses do you <strong>love</strong> most
+                <select id="dropdown" >
+                    <option value=""> select current role</option>
+                    <option value="1"> color cours</option>
+                    <option value="2"> css cours</option>
+                    <option value="3"> Java cours</option>
+                </select>
+           </label>
+        </fieldset>
+        <fieldset> Do you like coding?
+            <label><input type="radio" value="love" name="love"> love it</label>
+            <label><input type="radio" value="maybe" name="love"> maybe</label>
+            <label><input type="radio" value="hate" name="love"> hate it</label>
+        </fieldset>
+        <fieldset> What would you like to learn
+            <label><input type="checkbox" value="text">html</label>
+            <label><input type="checkbox" value="text">css</label>
+            <label><input type="checkbox" value="text">C#</label>
+            <label><input type="checkbox" value="text">Front-end</label>
+            <label><input type="checkbox" value="text">back-end</label>
+            <label for="comment"> any suggestions for more courses
+            <textarea name="comment" id="comment" cols="30" rows="3" placeholder="Enter your comment here"></textarea>
+            </label>
+            <button id="submit">SUBMIT</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
